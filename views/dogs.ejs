@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo App</title>
+        <link rel="stylesheet" href="/app.css">
+    </head>
+    <body>
+
+<h1>DOGS LIST</h1>
+
+<%dogs.forEach(function(dog){%>
+    <li><%=dog%></li>
+<%});%>
+
+<form action="/adddog" method="POST">
+    <input type="text" name="newdog" placeholder="name">
+    <button>New dog - new love</button>
+</form>
+    
+    <p>Author:I.H.</p>
+    </body>
+</html>

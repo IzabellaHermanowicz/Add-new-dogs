@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Demo App</title>
+        <title>New Dog - New Love</title>
         <link rel="stylesheet" href="/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Ultra&display=swap" rel="stylesheet">
     </head>
     <body>
-
+<div id="back">
 <h1>DOGS LIST</h1>
 
 <%dogs.forEach(function(dog){%>
@@ -14,9 +15,10 @@
 
 <form action="/adddog" method="POST">
     <input type="text" name="newdog" placeholder="name">
-    <button>New dog - new love</button>
+    <button>NEW DOG</button>
 </form>
     
     <p>Author:I.H.</p>
+</div>
     </body>
 </html>
